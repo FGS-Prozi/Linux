@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: rgb(117, 168, 255);
+    background-color: rgb(55, 58, 64);
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,7 +11,7 @@ body {
 }
 
 main {
-    background-color: #4800ff9c;
+    background-color: rgb(104, 109, 118);
     border-radius: 10px;
     box-sizing: border-box;
     
@@ -50,7 +50,7 @@ h1, h2 {
     list-style-type: none;
     padding: 20px;
 
-    background-color: rgba(56, 0, 241, 0.625);
+    background-color: rgb(220, 95, 0);
     border-radius: 10px;
     
     backdrop-filter: blur(8px);
