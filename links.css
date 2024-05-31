@@ -1,0 +1,40 @@
+/*LINKS*/
+/* unvisited link */
+a:link {
+    text-decoration: none;
+    color: white;
+    
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+  
+  /* visited link */
+  a:visited {
+    text-decoration: none;
+    color: white;
+    
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    text-decoration: none;
+    color: white;
+    
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+  
+  /* selected link */
+  a:active {
+    text-decoration: none;
+    color: white;
+    
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1.25rem;
+  }

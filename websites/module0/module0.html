@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <!--POPRAWIĆ KOMPATYBILNOŚĆ Z URZĄDZENIAMI MOBILNYMI (CZCIONKA)-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 0</title>
+    <link rel="stylesheet" href="../module.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header class="row">
+            <div class="col cell">
+                <h1>Module 0</h1>
+                <h2>Handouts</h2>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="L-col cell">
+                        <h2>PDF Files</h2>
+                        <ul>
+                            <li><button class="Button"><a href="../../index.html">Strona Główna</a></button></li>
+                            <li><button id="pdfButton1" class="Button">Syllabus</button></li>
+                        </ul>
+                    </div>
+                    <div class="M-col cell">
+                        <h2>Overview</h2>
+                        <embed id="pdfViewer" src="../default.pdf" width="600px" height="400px"></embed>
+                    </div>
+                </div>
+            </div>
+        </section>
+          <script src="./module0.js"></script>
+        <footer class="row">
+            <div class="col cell">
+                <h4>Website version: 1.3v</h4>
+                <h4>Last updated: 31.05.2024</h4>
+                <h4>&copy; Prozi</h4>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
