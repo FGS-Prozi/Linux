@@ -1,7 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
     const pdfViewer = document.getElementById("pdfViewer");
 
-    document.getElementById("pdfButton1").addEventListener("click", function() {
-        pdfViewer.src = "./Complete Linux Training Syllabus.pdf";
+    const pdfFiles = [
+        { buttonId: "pdfButton1", filePath: "./pdf0/Complete Linux Training Syllabus.pdf" }
+    ];
+
+    pdfFiles.forEach(({ buttonId, filePath }) => {
+        document.getElementById(buttonId).addEventListener("click", function() {
+            pdfViewer.data = filePath;
+        });
     });
 });

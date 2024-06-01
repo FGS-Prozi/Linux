@@ -1,47 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
     const pdfViewer = document.getElementById("pdfViewer");
 
-    document.getElementById("pdfButton1").addEventListener("click", function() {
-        pdfViewer.src = "./pdf1/Module 1.pdf";
-    });
-});
+    const pdfFiles = [
+        { buttonId: "pdfButton1", filePath: "./pdf1/Module 1.pdf" },
+        { buttonId: "pdfButton2", filePath: "./pdf1/History of Unix.pdf" },
+        { buttonId: "pdfButton3", filePath: "./pdf1/Operating system.pdf" },
+        { buttonId: "pdfButton4", filePath: "./pdf1/Inside Linux.pdf" },
+        { buttonId: "pdfButton5", filePath: "./pdf1/Parts of OS.pdf" },
+        { buttonId: "pdfButton6", filePath: "./pdf1/Virtual memory.pdf" }
+    ];
 
-document.addEventListener("DOMContentLoaded", function() {
-    const pdfViewer = document.getElementById("pdfViewer");
-
-    document.getElementById("pdfButton2").addEventListener("click", function() {
-        pdfViewer.src = "./pdf1/History of Unix.pdf";
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    const pdfViewer = document.getElementById("pdfViewer");
-
-    document.getElementById("pdfButton3").addEventListener("click", function() {
-        pdfViewer.src = "./pdf1/Operating system.pdf";
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    const pdfViewer = document.getElementById("pdfViewer");
-
-    document.getElementById("pdfButton4").addEventListener("click", function() {
-        pdfViewer.src = "./pdf1/Inside Linux.pdf";
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    const pdfViewer = document.getElementById("pdfViewer");
-
-    document.getElementById("pdfButton5").addEventListener("click", function() {
-        pdfViewer.src = "./pdf1/Parts of OS.pdf";
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    const pdfViewer = document.getElementById("pdfViewer");
-
-    document.getElementById("pdfButton6").addEventListener("click", function() {
-        pdfViewer.src = "./pdf1/Virtual memory.pdf";
+    pdfFiles.forEach(({ buttonId, filePath }) => {
+        document.getElementById(buttonId).addEventListener("click", function() {
+            pdfViewer.data = filePath;
+        });
     });
 });
