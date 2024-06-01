@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const footerPath = window.location.pathname.endsWith('/') || window.location.pathname === '/' ?
+        const footerPath = window.location.pathname.endsWith('/') || window.location.pathname === '/index.html' ?
             './footer.html' : '../../footer.html';
 
         const response = await fetch(footerPath);
